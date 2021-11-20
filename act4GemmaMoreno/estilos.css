@@ -1,0 +1,116 @@
+.grid{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 10% 5% 80% 5%;
+    grid-gap: 10px;
+    
+}
+body{
+    font-family: Verdana, Arial;
+}
+
+header{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+header img{
+    height: 75px;
+    width: 100px;
+    grid-column: 1;
+    grid-row: 1;
+     
+}
+header h1{
+    color: rgb(77, 76, 76);
+    grid-column: 2;
+    grid-row: 1/ span 2;
+    margin-left: 20px;
+}
+nav{
+    background-color: lightpink;
+    border-radius: 25px;
+    color: rgb(77, 76, 76);
+    padding: 20px 20px;
+    text-decoration: none;
+    text-align: start;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+nav a{
+    color: rgb(77, 76, 76);
+    font-size: 100%;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+.container{
+    padding: 15px;
+    color: rgb(77, 76, 76);
+    grid-column: 1 /span 3;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+}
+
+section{
+    grid-column: 1;
+    grid-row: 1/ span 2;
+}
+
+#foto{
+    position: static;
+}
+
+#foto1{
+    position: absolute;
+    max-width: 80%;
+    z-index: 2;
+}
+#foto2{
+    position: static;
+    opacity: 50%;
+    max-width: 40%;
+    z-index: 1;
+}
+aside{
+    border: lightpink solid 2px;
+    border-radius: 25px;
+    font-size: 100%;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+aside h2{
+    padding-bottom: 20px;
+    border-bottom: rgb(77, 76, 76) solid 1px;
+    color: rgb(77, 76, 76);
+}
+aside a{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 50px;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px 50px;
+    color: rgb(77, 76, 76);
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
